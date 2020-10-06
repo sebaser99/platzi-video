@@ -1,0 +1,55 @@
+mixin myList
+	li.myPlaylist-item
+		a(href="#")
+			span Reasons To choose A Notebook Over a Computer Desktop
+
+mixin playListFriends(nombre)
+	li.playlistFriends-item
+		a(href="#")
+			img(src="../images/covers/echame-la-culpa.jpg", alt="echame la culpa")
+			span=nombre
+
+mixin PrimaryPlaylistItem
+	.primaryPlaylistItem
+		.primaryPlaylistItem-image
+			img(src="../images/covers/midnight.jpg", alt="portada película midnight",width="250", height="180")
+		h4.primaryPlaylistItem-title Midnight city
+
+mixin ol-myList
+	ol.myPlaylist
+		+myList
+		+myList
+		+myList
+		+myList
+		+myList
+		+myList
+		+myList
+		+myList
+		+myList
+
+mixin ul-playlistFriends
+	ul.playlistFriends
+		+playListFriends("Luis Fonsi")
+		+playListFriends("Sebas Rodriguez")
+		+playListFriends("Luis Fonsi")
+		+playListFriends("Sebas Rodriguez")
+		+playListFriends("Luis Fonsi")
+		+playListFriends("Sebas Rodriguez")
+		+playListFriends("Luis Fonsi")
+		+playListFriends("Sebas Rodriguez")
+
+mixin primaryPlaylist
+	.primaryPlaylist
+		h3.primaryPlaylist-topic Lo mejor de la semana			
+		h2.primaryPlaylist-title Destacados
+		.primaryPlaylist-list
+			+PrimaryPlaylistItem
+			+PrimaryPlaylistItem
+			+PrimaryPlaylistItem
+			+PrimaryPlaylistItem
+			+PrimaryPlaylistItem
+			+PrimaryPlaylistItem
+			+PrimaryPlaylistItem
+		
+	
+		

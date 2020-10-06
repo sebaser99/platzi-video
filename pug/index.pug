@@ -1,0 +1,44 @@
+include componentes/mixins.pug
+doctype html
+html
+	head
+		meta(charset='UTF-8')
+		title Platzi Video
+		link(rel="stylesheet", href=href="https://fonts.googleapis.com/css?family=Lato:300,400,700")
+		link(rel="stylesheet", href="../css/home.css")
+	body
+		section.home
+			.home-sidebar
+				.sidebar
+					.logo
+						figure.logo-image
+							img(src="../images/platzi-video.png", alt="Platzi Video - la Plataforma de videos cheveres")
+					.sidebarPlaylist
+						h2.sidebarPlaylist-title My Playlist
+							span.btnWarning Escuhar Playlist
+						+ol-myList
+					.sidebarPlaylist
+						h2.sidebarPlaylist-title Playlist de amigos
+						+ul-playlistFriends
+			.home-primary
+				.primary-search
+					form.search(action="")
+						input(type="text", placeholder="Buscar un artista o tema favorito")
+				.primary-user
+					.user
+						p
+							img(src="../images/covers/gorillaz.jpg", alt="Cover gorillaz")
+							span Sebastian Rodriguez
+				.primary-list
+					+primaryPlaylist
+					+primaryPlaylist
+					+primaryPlaylist
+			.home-featuring
+				.featuring
+					.featuring-image
+						img(src="../images/covers/gorillaz.jpg", alt="",width="100", height="100" )
+					.featuring-content
+						p.featuring-title Continúa viendo
+						p.featuring-album New Order - Bizarre Love Triangle
+				
+					
