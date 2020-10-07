@@ -1,0 +1,6 @@
+.btn {
+    @include button;
+}
+.btnWarning {
+    background-color: $warningColor;
+}
