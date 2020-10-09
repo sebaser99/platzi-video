@@ -1,6 +1,10 @@
 $darkColor:  #15192a;
 $lightColor: white;
 $warningColor: red;
+$grayColor: #f0f0f0f0;
+$fontColor: #888B8E;
+$titleColor: #3F546C;
+
 
 @mixin button {
     border: 1px solid $lightColor;
@@ -10,12 +14,20 @@ $warningColor: red;
     padding: .5em 2em;
     text-transform: uppercase;
     cursor: pointer;
-    font-size: 14px;
+    font-size: 1.2rem;
     border-bottom: 5px solid $lightColor;
+    margin: 0.5rem;
 }
 
 html {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-size: 62.5%;
 }
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+
+}   

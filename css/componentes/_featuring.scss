@@ -1,0 +1,19 @@
+.featuring  {
+    background: linear-gradient(to right,  #ff0000, #ff458b);
+    display: flex;
+    height: 100%;
+    align-items: center;
+    padding-left: 10rem;
+    color: $lightColor;
+    &-image {
+        margin-right: 2rem;
+    }
+    &-title {
+        margin: 1rem;
+        font-size: 1.6rem;
+    }
+    &-album {
+        font-size: 2.08rem;
+        margin: 1rem;
+    }
+}

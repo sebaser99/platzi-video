@@ -1,0 +1,19 @@
+.myPlaylist {
+	padding: 0 20px;
+
+	&-item a {
+		color: $lightColor;
+		text-decoration: none;
+		font-size: 1.28rem;
+		display: block;
+		margin-bottom: 0.7rem;
+	}
+
+	&-item:last-child a {
+		margin-bottom: 0;
+	}
+
+	&-item a:hover {
+		text-decoration: underline;
+	}
+}

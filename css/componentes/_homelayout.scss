@@ -4,8 +4,8 @@
     height: 100vh;
     grid-template-columns: 350px 1fr;
     grid-template-rows: 1fr 150px;
-    grid-template-areas: "sidebar" "primary"
-                         "sidebar" "featuring"  ;
+    grid-template-areas: "sidebar primary "
+                         "sidebar featuring "  ;
 }
 
 .home-sidebar {

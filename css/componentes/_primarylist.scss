@@ -1,0 +1,42 @@
+.primary-list {
+	grid-area: list;
+	overflow: auto;
+
+}
+
+.primaryPlaylist {
+
+	&-topic {
+		margin: 1.5rem 0 0;
+		color: $fontColor;
+		font-size: 1.4rem;
+		font-weight: 300;
+
+	}
+	&-title {
+		margin: 0 0 1.5rem;
+		color:  $titleColor;
+		font-size: 2rem;
+  	font-weight: 400;
+
+	}
+	&-list {
+		display:flex;
+		overflow: auto;
+		margin-right: 1rem;
+	}
+	&Item {
+		margin-right: 1rem;
+		&-title {
+			margin: 5px 0;
+			color: $fontColor;
+			font-size: 1.4rem;
+			font-weight: normal;
+		}
+		img {
+			width: 25rem;
+			height: 18rem;
+			object-fit: cover;
+		}
+	}
+}
